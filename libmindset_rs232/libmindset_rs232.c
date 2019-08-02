@@ -21,7 +21,7 @@
  * rate, parity, stop bit, and number of data bits per character
  * for the communications port.
  */
-unsigned short mindset_rs232_init_com_port(unsigned short port, ComPortParams* params, ComPortStatus* status)
+unsigned short mindset_rs232_init_com_port(unsigned short port, ComPortParams* params)
 {
   union REGS regs;
   regs.h.ah=0x00;
